@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Panel</title>
+    <link rel="stylesheet" href="../css/userpanel.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <img src="../assets/LOGO-Recovered1.png"
+            style="height:90px;width:90px;float:left;margin-top:5px;margin-left:5px;">
+        <p class="para"><b>NED University Shuttle Service</b></p>
+    </div>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+        <h2 style="margin-left:100px;color:white;font-family:Tahoma; text-align: center;">User Panel</h2>
+    </nav>
+
+    <div id="side-menu" class="side-nav" style="margin-top:110px;margin-left:8px;">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="../src/userprofile.html" onclick="profile()">Profile</a>
+        <a href="../src/resetpassword.html" onclick="reset_password()">Reset password</a>
+        <a href="../src/index.html" onclick="logout()">Logout</a>
+    </div>
+
+
+    <div class="flex-container">
+        <div onclick="linkbookingpage()">
+            <img src="../assets/booking.jpg" style="width: 150px; height: 150px; padding: 20px 0px 52px 0px; " alt="">
+            <h3>Booking</h3>
+        </div>
+        <div onclick="linkpaymentpage()">
+            <img src="../assets/payment.png" style="width: 150px; height: 150px; padding: 20px 0px 52px 0px; " alt="">
+            <h3>Payment Status</h3>
+        </div>
+        <div onclick="linksearchbuspage()">
+            <img src="../assets/search.png" style="width: 210px; height: 210px; padding: 13px 13px 0px 26px;" alt="">
+            <h3>Search Bus Information</h3>
+        </div>
+        <div onclick="linksearchroutepage()">
+            <img src="../assets/search.png" style="width: 210px; height: 210px; padding: 13px 13px 0px 26px;" alt="">
+            <h3>Search Route Information</h3>
+        </div>
+    </div>
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('main').style.marginLeft = '250px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';
+        }
+
+        function linkbookingpage() {
+            location.replace("file:///D:/WebProject/src/booking.html")
+        }
+
+        function linkpaymentpage() {
+            location.replace("file:///D:/WebProject/src/paystatus.html")
+        }
+
+        function linksearchbuspage() {
+            location.replace("file:///D:/WebProject/src/searchbusinfo.html")
+        }
+
+        function linksearchroutepage() {
+            location.replace("file:///D:/WebProject/src/searchrouteinfo.html")
+        }
+    </script>
+</body>
+
+</html>

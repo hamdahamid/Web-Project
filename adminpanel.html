@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../css/adminpanel.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <img src="../assets/LOGO-Recovered1.png"
+            style="height:90px;width:90px;float:left;margin-top:5px;margin-left:5px;">
+        <p class="para"><b>NED University Shuttle service</b></p>
+    </div>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+        <h2 style="margin-left:100px;color:white;font-family:Tahoma; text-align: center;">Admin panel</h2>
+    </nav>
+
+    <div id="side-menu" class="side-nav" style="margin-top:110px;margin-left:8px;">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#" onclick="profile()">Profile</a>
+        <a href="#" onclick="reset_password()">Reset password</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </div>
+
+
+
+    <div class="flex-container">
+        <div onclick="linkinsertpage()">
+            <img src="../assets/admin.png" style="width: 150px; height: 150px; padding: 20px 0px 52px 0px; " alt="">
+            <h3>Insert</h3>
+        </div>
+        <div onclick="linkupdatepage()">
+            <img src="../assets/admin.png" style="width: 150px; height: 150px; padding: 20px 0px 52px 0px; " alt="">
+            <h3>Update</h3>
+        </div>
+        <div onclick="linkdeletepage()">
+            <img src="../assets/admin.png" style="width: 150px; height: 150px; padding: 20px 0px 52px 0px; " alt="">
+            <h3>Delete</h3>
+        </div>
+        <div onclick="linksearchpage()">
+            <img src="../assets/search.png" style="width: 210px; height: 210px; padding: 13px 13px 0px 26px;" alt="">
+            <h3>Search</h3>
+        </div>
+    </div>
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('main').style.marginLeft = '250px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';
+        }
+
+        function linkinsertpage() {
+            location.replace("file:///D:/WebProject/src/insert.html")
+        }
+
+        function linkupdatepage() {
+            location.replace("file:///D:/WebProject/src/update.html")
+        }
+
+        function linkdeletepage() {
+            location.replace("file:///D:/WebProject/src/delete.html")
+        }
+
+        function linksearchpage() {
+            location.replace("file:///D:/WebProject/src/search.html")
+        }
+
+        function profile() {
+
+        }
+
+        function reset_password() {
+
+        }
+
+        function logout() {
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../css/userprofile.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <img src="../assets/LOGO-Recovered1.png"
+            style="height:90px;width:90px;float:left;margin-top:5px;margin-left:5px;">
+        <p class="para"><b>NED University Shuttle service</b></p>
+    </div>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+        <h2 style="margin-left:100px;color:white;font-family:Tahoma; text-align: center;">User Profile</h2>
+    </nav>
+
+    <div id="side-menu" class="side-nav" style="margin-top:110px;margin-left:8px;">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="../src/userprofile.html" onclick="profile()">Profile</a>
+        <a href="../src/resetpassword.html" onclick="reset_password()">Reset password</a>
+        <a href="../src/index.html" onclick="logout()">Logout</a>
+    </div>
+
+    <div class="profile">
+        <div class="login-area">
+            <div class="form-area">
+                <h3>Registration</h3>
+                <form class="sign">
+                    <br>
+                    <p>Name</p>
+                    <name="name"></br></br>
+                        <p>Roll No.</p>
+                        <input type="text" name="rollno" placeholder="e.g SE-000"></br></br>
+                        <p>Year</p>
+                        <input type="text" name="year" placeholder="e.g 20--"></br></br>
+                        <p>Department</p>
+                        <input type="text" name="department"></br></br>
+                        <p>Type</p>
+                        <input type="text" name="type" placeholder="e.g Student/Faculty">
+                        </br></br>
+                        <p>Email</p>
+                        <input type="text" name="email" placeholder="abc@gmail.com"></br></br>
+                        <p>Password</p>
+                        <input type="text" name="password"></br></br>
+                        <input type="submit" name="submit" id="" value="Register">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('main').style.marginLeft = '250px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';
+        }
+
+        function profile() {
+
+        }
+
+        function reset_password() {
+
+        }
+
+        function logout() {
+
+        }
+    </script>
+</body>
+
+</html>
